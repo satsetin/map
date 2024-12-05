@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SatSetIn</title>
   <link rel="stylesheet" href="./css/style.css" type="text/css" />
-  <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
+
 <body>
   <style>
     /* Custom Styles for Navbar */
@@ -94,15 +93,8 @@
         <a class="navbar-brand" href="#">SatsetIn</a>
 
         <!-- Button toggle untuk menu mobile -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -118,9 +110,9 @@
             <li class="nav-item">
               <a class="nav-link" href="https://satsetin.github.io/product.html">Product</a>
             </li>
-			<li class="nav-item">
-                <a class="nav-link" href="https://satsetin.github.io/map/">Map</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://satsetin.github.io/map/">Map</a>
+            </li>
             <!-- Cart item counter -->
             <li class="nav-item">
               <a class="nav-link" href="https://satsetin.github.io/cart.html">
@@ -148,15 +140,10 @@
       <div class="button-group">
         <label for="distance-input" class="form-label">Jarak Tempuh (m):</label>
         <div class="d-flex">
-          <input
-            type="text"
-            id="distance-input"
-            class="form-control me-2"
-            placeholder="Masukkan jarak"
-          />
+          <input type="text" id="distance-input" class="form-control me-2" placeholder="Masukkan jarak" />
           <button id="btn-distance" class="btn btn-primary">Hitung</button>
         </div>
-		<div class="btn btn-primary">Daerah</div>
+        <button id="regionSearch" class="btn btn-primary">Daerah</button>
       </div>
       <div class="list">
         <h2>Daftar Lokasi</h2>
@@ -205,9 +192,8 @@
         alert("Masukkan jarak yang valid (angka positif)!");
         return;
       }
-
-      alert(`Jarak tempuh yang dimasukkan adalah ${distanceInput} km.`);
     });
   </script>
 </body>
+
 </html>
