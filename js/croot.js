@@ -115,7 +115,7 @@ document.getElementById("regionSearch").addEventListener("click", async () => {
 // Function to fetch roads
 async function fetchRoads(longitude, latitude, maxDistance) {
   try {
-    const response = await fetch("https://asia-southeast2-awangga.cloudfunctions.net/satsetin/roads", {
+    const response = await fetch("https://asia-southeast2-awangga.cloudfunctions.net/itungin/roads", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -152,7 +152,7 @@ function displayRoads(geoJSON) {
 
 async function fetchRegionGeoJSON(longitude, latitude) {
   try {
-    const response = await fetch("https://asia-southeast2-awangga.cloudfunctions.net/satsetin/region", {
+    const response = await fetch("https://asia-southeast2-awangga.cloudfunctions.net/itungin/region", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
