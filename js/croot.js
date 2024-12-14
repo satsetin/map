@@ -87,9 +87,8 @@ document.getElementById("btn-distance").addEventListener("click", async () => {
   const [longitude, latitude] = clickedCoordinates;
   const roadsData = await fetchRoads(longitude, latitude, maxDistance);
   if (roadsData) {
-    const geoJSON = convertToGeoJSON(roadsData);
-    displayRoads(geoJSON);
-  }
+    displayRoads(roadsData); // Langsung oper ke displayRoads
+  }  
 });
 
 // Region
