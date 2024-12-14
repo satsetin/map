@@ -104,7 +104,7 @@ document.getElementById("regionSearch").addEventListener("click", async () => {
     if (geoJSON) {
       displayPolygonOnMap(geoJSON); // Tampilkan poligon dari GeoJSON
     } else {
-      alert("Failed to fetch region data. Please try again.");
+      alert("Failed to fetch region data. Please try again!!.");
     }
   } else {
     alert("Please click on the map to select a region.");
