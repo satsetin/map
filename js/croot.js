@@ -138,7 +138,6 @@ async function fetchRoads(longitude, latitude, maxDistance) {
   }
 }
 
-// Function to display roads
 function displayRoads(geoJSON) {
   const format = new GeoJSON();
   const features = format.readFeatures(geoJSON, {
@@ -204,14 +203,3 @@ function addMarker(coordinate) {
   markerSource.addFeature(marker); // Add new marker
 }
 
-// Function to convert response to GeoJSON
-function convertToGeoJSON(response) {
-  return {
-    type: "FeatureCollection",
-    features: response.map((road) => ({
-      type: "Feature",
-      geometry: road.geometry,
-      properties: road.properties,
-    })),
-  };
-}
